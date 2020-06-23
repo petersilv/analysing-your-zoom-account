@@ -1,0 +1,9 @@
+*.bak
+*.gdoc
+
+Icon?
+
+00_Archive/
+
+Data/Event_Details.csv
+Data/Event_Participants.csv
