@@ -1,0 +1,1699 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2020.2">
+  <Nodes>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="30">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="54" y="54" width="1212" height="228" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text />
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor r="247" g="247" b="247" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="31">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="78" y="66" width="1164" height="120" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Zoom Data - Event Instance Details</Text>
+          <Font name="Segoe UI" size="36" style="1" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="3" />
+          <Justification Justification="3" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="32">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="78" y="186" width="1164" height="84" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Description:   Get details on event instances
+Author:        Peter Silvester &amp; Craig Steven
+Last Update:   2020-07-01 / Peter Silvester</Text>
+          <Font name="Courier New" size="15.75" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="3" />
+          <Justification Justification="3" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="38">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="2093" y="413" width="385" height="217" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Assert Field</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="36">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+            <Position x="2118" y="462" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <NumRows value="0" />
+              <Fields>
+                <Field name="agenda" />
+                <Field name="created_at" />
+                <Field name="endpoint_type" />
+                <Field name="expected_duration" />
+                <Field name="expected_end_time" />
+                <Field name="expected_start_time" />
+                <Field name="instance_dept" />
+                <Field name="instance_duration" />
+                <Field name="instance_end_time" />
+                <Field name="instance_host_id" />
+                <Field name="instance_id" />
+                <Field name="instance_participants_count" />
+                <Field name="instance_start_time" />
+                <Field name="instance_topic" />
+                <Field name="instance_total_minutes" />
+                <Field name="instance_type" />
+                <Field name="instance_user_email" />
+                <Field name="instance_user_name" />
+                <Field name="instance_uuid" />
+                <Field name="master_id" />
+                <Field name="master_uuid" />
+                <Field name="topic" />
+                <Field name="type" />
+                <Field name="uuid" />
+              </Fields>
+              <Data />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="agenda" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="created_at" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="endpoint_type" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="expected_duration" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="expected_end_time" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="expected_start_time" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="instance_dept" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="instance_duration" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="instance_end_time" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="instance_host_id" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="instance_id" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="instance_participants_count" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="instance_start_time" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="instance_topic" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="instance_total_minutes" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="instance_type" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="instance_user_email" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="instance_user_name" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="instance_uuid" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="master_id" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="master_uuid" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="topic" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="type" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="uuid" size="1073741823" source="TextInput:" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+        </Node>
+        <Node ToolID="37">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+            <Position x="2394" y="546" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <ByName_ErrorMode>Ignore</ByName_ErrorMode>
+              <ByName_OutputMode>All</ByName_OutputMode>
+              <Mode>ByName</Mode>
+              <SetOutputOrder value="True" />
+              <OutputOrder>
+                <Connection>#1</Connection>
+                <Connection>#2</Connection>
+              </OutputOrder>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="endpoint_type" size="1073741823" source="(Multiple Sources)" type="V_WString" />
+                <Field name="master_id" size="1073741823" source="(Multiple Sources)" type="V_WString" />
+                <Field name="master_uuid" size="1073741823" source="(Multiple Sources)" type="V_WString" />
+                <Field name="topic" size="1073741823" source="(Multiple Sources)" type="V_WString" />
+                <Field name="agenda" size="1073741823" source="(Multiple Sources)" type="V_WString" />
+                <Field name="created_at" size="1073741823" source="(Multiple Sources)" type="V_WString" />
+                <Field name="expected_start_time" size="1073741823" source="(Multiple Sources)" type="V_WString" />
+                <Field name="expected_end_time" size="1073741823" source="(Multiple Sources)" type="V_WString" />
+                <Field name="created_at_utc" size="1073741823" source="CrossTab:Group:First:" type="V_WString" />
+                <Field name="expected_start_time_utc" size="1073741823" source="CrossTab:Group:First:" type="V_WString" />
+                <Field name="expected_end_time_utc" size="1073741823" source="CrossTab:Group:First:" type="V_WString" />
+                <Field name="expected_duration" size="1073741823" source="(Multiple Sources)" type="V_WString" />
+                <Field name="timezone" size="1073741823" source="CrossTab:Group:First:" type="V_WString" />
+                <Field name="type" size="1073741823" source="(Multiple Sources)" type="V_WString" />
+                <Field name="uuid" size="1073741823" source="(Multiple Sources)" type="V_WString" />
+                <Field name="instance_dept" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="instance_duration" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="instance_end_time" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="instance_host_id" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="instance_id" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="instance_participants_count" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="instance_start_time" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="instance_topic" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="instance_total_minutes" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="instance_type" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="instance_user_email" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="instance_user_name" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="instance_uuid" size="1073741823" source="TextInput:" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+        </Node>
+        <Node ToolID="39">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="2250" y="462" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="created_at" selected="True" type="DateTime" size="19" />
+                <SelectField field="expected_end_time" selected="True" type="DateTime" size="19" />
+                <SelectField field="expected_start_time" selected="True" type="DateTime" size="19" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="agenda" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="created_at" source="TextInput:" type="DateTime" />
+                <Field name="endpoint_type" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="expected_duration" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="expected_end_time" source="TextInput:" type="DateTime" />
+                <Field name="expected_start_time" source="TextInput:" type="DateTime" />
+                <Field name="instance_dept" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="instance_duration" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="instance_end_time" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="instance_host_id" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="instance_id" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="instance_participants_count" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="instance_start_time" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="instance_topic" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="instance_total_minutes" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="instance_type" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="instance_user_email" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="instance_user_name" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="instance_uuid" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="master_id" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="master_uuid" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="topic" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="type" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="uuid" size="1073741823" source="TextInput:" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="25">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="2525" y="497" width="721" height="165" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Tidy Instance Details</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="9">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.MultiFieldFormula.MultiFieldFormula">
+            <Position x="2550" y="546.0001" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FieldType>Text</FieldType>
+              <Fields orderChanged="False">
+                <Field name="instance_end_time" />
+                <Field name="instance_start_time" />
+                <Field name="agenda" selected="False" />
+                <Field name="agenda_length" selected="False" />
+                <Field name="created_at" selected="False" />
+                <Field name="endpoint_type" selected="False" />
+                <Field name="expected_duration" selected="False" />
+                <Field name="expected_end_time" selected="False" />
+                <Field name="expected_start_time" selected="False" />
+                <Field name="has_agenda_" selected="False" />
+                <Field name="instance_dept" selected="False" />
+                <Field name="instance_duration" selected="False" />
+                <Field name="instance_host_id" selected="False" />
+                <Field name="instance_id" selected="False" />
+                <Field name="instance_participants_count" selected="False" />
+                <Field name="instance_topic" selected="False" />
+                <Field name="instance_total_minutes" selected="False" />
+                <Field name="instance_type" selected="False" />
+                <Field name="instance_user_email" selected="False" />
+                <Field name="instance_user_name" selected="False" />
+                <Field name="instance_uuid" selected="False" />
+                <Field name="master_id" selected="False" />
+                <Field name="master_uuid" selected="False" />
+                <Field name="topic" selected="False" />
+                <Field name="type" selected="False" />
+                <Field name="uuid" selected="False" />
+                <Field name="*Unknown" selected="False" />
+              </Fields>
+              <CopyOutput value="False" />
+              <Expression>DateTimeParse([_CurrentField_],'%Y-%m-%dT%H:%M:%SZ')</Expression>
+              <ChangeFieldType value="True" />
+              <OutputFieldType type="DateTime" size="19" scale="1" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Parse Start / End Time</AnnotationText>
+              <DefaultAnnotationText>DateTimeParse([_CurrentField_],'%Y-%m-%dT%H:%M:%SZ')</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="endpoint_type" size="1073741823" source="(Multiple Sources)" type="V_WString" />
+                <Field name="master_id" size="1073741823" source="(Multiple Sources)" type="V_WString" />
+                <Field name="master_uuid" size="1073741823" source="(Multiple Sources)" type="V_WString" />
+                <Field name="topic" size="1073741823" source="(Multiple Sources)" type="V_WString" />
+                <Field name="agenda" size="1073741823" source="(Multiple Sources)" type="V_WString" />
+                <Field name="created_at" size="1073741823" source="(Multiple Sources)" type="V_WString" />
+                <Field name="expected_start_time" size="1073741823" source="(Multiple Sources)" type="V_WString" />
+                <Field name="expected_end_time" size="1073741823" source="(Multiple Sources)" type="V_WString" />
+                <Field name="created_at_utc" size="1073741823" source="CrossTab:Group:First:" type="V_WString" />
+                <Field name="expected_start_time_utc" size="1073741823" source="CrossTab:Group:First:" type="V_WString" />
+                <Field name="expected_end_time_utc" size="1073741823" source="CrossTab:Group:First:" type="V_WString" />
+                <Field name="expected_duration" size="1073741823" source="(Multiple Sources)" type="V_WString" />
+                <Field name="timezone" size="1073741823" source="CrossTab:Group:First:" type="V_WString" />
+                <Field name="type" size="1073741823" source="(Multiple Sources)" type="V_WString" />
+                <Field name="uuid" size="1073741823" source="(Multiple Sources)" type="V_WString" />
+                <Field name="instance_dept" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="instance_duration" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="instance_end_time" source="Formula: DateTimeParse([_CurrentField_],'%Y-%m-%dT%H:%M:%SZ')" type="DateTime" />
+                <Field name="instance_host_id" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="instance_id" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="instance_participants_count" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="instance_start_time" source="Formula: DateTimeParse([_CurrentField_],'%Y-%m-%dT%H:%M:%SZ')" type="DateTime" />
+                <Field name="instance_topic" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="instance_total_minutes" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="instance_type" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="instance_user_email" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="instance_user_name" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="instance_uuid" size="1073741823" source="TextInput:" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMultiFieldFormula" />
+        </Node>
+        <Node ToolID="10">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="2706" y="546" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="not IsEmpty([agenda])" field="has_agenda?" size="1" type="Bool" />
+                <FormulaField expression="length([agenda])" field="agenda_length" size="1073741823" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Agenda details</AnnotationText>
+              <DefaultAnnotationText><![CDATA[has_agenda? = not IsEmpty([agenda])
+agenda_length = length([agenda])
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="endpoint_type" size="1073741823" source="(Multiple Sources)" type="V_WString" />
+                <Field name="master_id" size="1073741823" source="(Multiple Sources)" type="V_WString" />
+                <Field name="master_uuid" size="1073741823" source="(Multiple Sources)" type="V_WString" />
+                <Field name="topic" size="1073741823" source="(Multiple Sources)" type="V_WString" />
+                <Field name="agenda" size="1073741823" source="(Multiple Sources)" type="V_WString" />
+                <Field name="created_at" size="1073741823" source="(Multiple Sources)" type="V_WString" />
+                <Field name="expected_start_time" size="1073741823" source="(Multiple Sources)" type="V_WString" />
+                <Field name="expected_end_time" size="1073741823" source="(Multiple Sources)" type="V_WString" />
+                <Field name="created_at_utc" size="1073741823" source="CrossTab:Group:First:" type="V_WString" />
+                <Field name="expected_start_time_utc" size="1073741823" source="CrossTab:Group:First:" type="V_WString" />
+                <Field name="expected_end_time_utc" size="1073741823" source="CrossTab:Group:First:" type="V_WString" />
+                <Field name="expected_duration" size="1073741823" source="(Multiple Sources)" type="V_WString" />
+                <Field name="timezone" size="1073741823" source="CrossTab:Group:First:" type="V_WString" />
+                <Field name="type" size="1073741823" source="(Multiple Sources)" type="V_WString" />
+                <Field name="uuid" size="1073741823" source="(Multiple Sources)" type="V_WString" />
+                <Field name="instance_dept" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="instance_duration" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="instance_end_time" source="Formula: DateTimeParse([_CurrentField_],'%Y-%m-%dT%H:%M:%SZ')" type="DateTime" />
+                <Field name="instance_host_id" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="instance_id" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="instance_participants_count" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="instance_start_time" source="Formula: DateTimeParse([_CurrentField_],'%Y-%m-%dT%H:%M:%SZ')" type="DateTime" />
+                <Field name="instance_topic" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="instance_total_minutes" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="instance_type" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="instance_user_email" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="instance_user_name" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="instance_uuid" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="has_agenda?" source="Formula: not IsEmpty([agenda])" type="Bool" />
+                <Field name="agenda_length" size="1073741823" source="Formula: length([agenda])" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="11">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="2862" y="546" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="TitleCase([endpoint_type])" field="endpoint_type" size="1073741823" type="V_WString" />
+                <FormulaField expression="if IsNull([instance_topic]) then 'Meeting Cancelled' else [instance_topic] endif" field="instance_topic" size="1073741823" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Endpoint Type</AnnotationText>
+              <DefaultAnnotationText>endpoint_type = TitleCase([endpoint_type])
+instance_topic = if IsNull([instance_...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="endpoint_type" size="1073741823" source="Formula: TitleCase([endpoint_type])" type="V_WString" />
+                <Field name="master_id" size="1073741823" source="(Multiple Sources)" type="V_WString" />
+                <Field name="master_uuid" size="1073741823" source="(Multiple Sources)" type="V_WString" />
+                <Field name="topic" size="1073741823" source="(Multiple Sources)" type="V_WString" />
+                <Field name="agenda" size="1073741823" source="(Multiple Sources)" type="V_WString" />
+                <Field name="created_at" size="1073741823" source="(Multiple Sources)" type="V_WString" />
+                <Field name="expected_start_time" size="1073741823" source="(Multiple Sources)" type="V_WString" />
+                <Field name="expected_end_time" size="1073741823" source="(Multiple Sources)" type="V_WString" />
+                <Field name="created_at_utc" size="1073741823" source="CrossTab:Group:First:" type="V_WString" />
+                <Field name="expected_start_time_utc" size="1073741823" source="CrossTab:Group:First:" type="V_WString" />
+                <Field name="expected_end_time_utc" size="1073741823" source="CrossTab:Group:First:" type="V_WString" />
+                <Field name="expected_duration" size="1073741823" source="(Multiple Sources)" type="V_WString" />
+                <Field name="timezone" size="1073741823" source="CrossTab:Group:First:" type="V_WString" />
+                <Field name="type" size="1073741823" source="(Multiple Sources)" type="V_WString" />
+                <Field name="uuid" size="1073741823" source="(Multiple Sources)" type="V_WString" />
+                <Field name="instance_dept" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="instance_duration" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="instance_end_time" source="Formula: DateTimeParse([_CurrentField_],'%Y-%m-%dT%H:%M:%SZ')" type="DateTime" />
+                <Field name="instance_host_id" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="instance_id" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="instance_participants_count" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="instance_start_time" source="Formula: DateTimeParse([_CurrentField_],'%Y-%m-%dT%H:%M:%SZ')" type="DateTime" />
+                <Field name="instance_topic" size="1073741823" source="Formula: if IsNull([instance_topic]) then 'Meeting Cancelled' else [instance_topic] endif" type="V_WString" />
+                <Field name="instance_total_minutes" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="instance_type" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="instance_user_email" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="instance_user_name" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="instance_uuid" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="has_agenda?" source="Formula: not IsEmpty([agenda])" type="Bool" />
+                <Field name="agenda_length" size="1073741823" source="Formula: length([agenda])" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="12">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="3162" y="546" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="endpoint_type" selected="True" size="254" />
+                <SelectField field="master_id" selected="True" type="V_String" size="254" />
+                <SelectField field="master_uuid" selected="True" type="V_String" size="254" />
+                <SelectField field="topic" selected="True" size="254" />
+                <SelectField field="agenda" selected="True" size="2048" />
+                <SelectField field="expected_duration" selected="True" type="Int64" size="8" />
+                <SelectField field="uuid" selected="False" />
+                <SelectField field="instance_duration" selected="True" type="Int64" size="8" />
+                <SelectField field="instance_participants_count" selected="True" type="Int64" size="8" />
+                <SelectField field="instance_topic" selected="True" size="2048" />
+                <SelectField field="instance_total_minutes" selected="True" type="Int64" size="8" />
+                <SelectField field="instance_type" selected="True" type="V_String" size="254" />
+                <SelectField field="instance_uuid" selected="True" type="V_String" size="254" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="endpoint_type" size="254" source="Formula: TitleCase([endpoint_type])" type="V_WString" />
+                <Field name="master_id" size="254" source="(Multiple Sources)" type="V_String" />
+                <Field name="master_uuid" size="254" source="(Multiple Sources)" type="V_String" />
+                <Field name="topic" size="254" source="(Multiple Sources)" type="V_WString" />
+                <Field name="agenda" size="2048" source="(Multiple Sources)" type="V_WString" />
+                <Field name="created_at" size="1073741823" source="(Multiple Sources)" type="V_WString" />
+                <Field name="expected_start_time" size="1073741823" source="(Multiple Sources)" type="V_WString" />
+                <Field name="expected_end_time" size="1073741823" source="(Multiple Sources)" type="V_WString" />
+                <Field name="created_at_utc" size="1073741823" source="CrossTab:Group:First:" type="V_WString" />
+                <Field name="expected_start_time_utc" size="1073741823" source="CrossTab:Group:First:" type="V_WString" />
+                <Field name="expected_end_time_utc" size="1073741823" source="CrossTab:Group:First:" type="V_WString" />
+                <Field name="expected_duration" source="(Multiple Sources)" type="Int64" />
+                <Field name="timezone" size="1073741823" source="CrossTab:Group:First:" type="V_WString" />
+                <Field name="type" size="1073741823" source="(Multiple Sources)" type="V_WString" />
+                <Field name="instance_dept" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="instance_duration" source="TextInput:" type="Int64" />
+                <Field name="instance_host_id" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="instance_id" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="instance_participants_count" source="TextInput:" type="Int64" />
+                <Field name="instance_topic" size="2048" source="Formula: if IsNull([instance_topic]) then 'Meeting Cancelled' else [instance_topic] endif" type="V_WString" />
+                <Field name="instance_total_minutes" source="TextInput:" type="Int64" />
+                <Field name="instance_type" size="254" source="TextInput:" type="V_String" />
+                <Field name="instance_user_email" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="instance_user_name" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="instance_uuid" size="254" source="TextInput:" type="V_String" />
+                <Field name="has_agenda?" source="Formula: not IsEmpty([agenda])" type="Bool" />
+                <Field name="agenda_length" size="1073741823" source="Formula: length([agenda])" type="V_WString" />
+                <Field name="Field_1" source="Formula: (Multiple Sources)" type="DateTime" />
+                <Field name="Field_1_utc" source="Formula: (Multiple Sources)" type="DateTime" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="45">
+          <GuiSettings>
+            <Position x="3018" y="546" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="List Box (9)">"instance_end_time","instance_start_time"</Value>
+              <Value name="Drop Down (15)">timezone</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="endpoint_type" size="1073741823" source="Formula: TitleCase([endpoint_type])" type="V_WString" />
+                <Field name="master_id" size="1073741823" source="(Multiple Sources)" type="V_WString" />
+                <Field name="master_uuid" size="1073741823" source="(Multiple Sources)" type="V_WString" />
+                <Field name="topic" size="1073741823" source="(Multiple Sources)" type="V_WString" />
+                <Field name="agenda" size="1073741823" source="(Multiple Sources)" type="V_WString" />
+                <Field name="created_at" size="1073741823" source="(Multiple Sources)" type="V_WString" />
+                <Field name="expected_start_time" size="1073741823" source="(Multiple Sources)" type="V_WString" />
+                <Field name="expected_end_time" size="1073741823" source="(Multiple Sources)" type="V_WString" />
+                <Field name="created_at_utc" size="1073741823" source="CrossTab:Group:First:" type="V_WString" />
+                <Field name="expected_start_time_utc" size="1073741823" source="CrossTab:Group:First:" type="V_WString" />
+                <Field name="expected_end_time_utc" size="1073741823" source="CrossTab:Group:First:" type="V_WString" />
+                <Field name="expected_duration" size="1073741823" source="(Multiple Sources)" type="V_WString" />
+                <Field name="timezone" size="1073741823" source="CrossTab:Group:First:" type="V_WString" />
+                <Field name="type" size="1073741823" source="(Multiple Sources)" type="V_WString" />
+                <Field name="uuid" size="1073741823" source="(Multiple Sources)" type="V_WString" />
+                <Field name="instance_dept" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="instance_duration" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="instance_host_id" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="instance_id" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="instance_participants_count" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="instance_topic" size="1073741823" source="Formula: if IsNull([instance_topic]) then 'Meeting Cancelled' else [instance_topic] endif" type="V_WString" />
+                <Field name="instance_total_minutes" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="instance_type" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="instance_user_email" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="instance_user_name" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="instance_uuid" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="has_agenda?" source="Formula: not IsEmpty([agenda])" type="Bool" />
+                <Field name="agenda_length" size="1073741823" source="Formula: length([agenda])" type="V_WString" />
+                <Field name="Field_1" source="Formula: (Multiple Sources)" type="DateTime" />
+                <Field name="Field_1_utc" source="Formula: (Multiple Sources)" type="DateTime" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings Macro="Macro_110_Convert_From_UTC.yxmc" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="26">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="1013" y="497" width="265" height="149" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Create URL</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="2">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="1194" y="546" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="Replace([url], '{id}', [uuid])&#xA;" field="url" size="255" type="V_String" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>URL</AnnotationText>
+              <DefaultAnnotationText><![CDATA[url = Replace([url], '{id}', [uuid])
+
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="endpoint_type" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="master_id" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="master_uuid" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="topic" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="agenda" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="created_at" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="expected_start_time" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="expected_end_time" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="created_at_utc" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="expected_start_time_utc" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="expected_end_time_utc" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="expected_duration" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="timezone" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="type" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="uuid" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="endpoint_num" source="TextInput:" type="Byte" />
+                <Field name="endpoint" size="15" source="TextInput:" type="String" />
+                <Field name="url" size="255" source="Formula: Replace([url], '{id}', [uuid])&#xA;" type="V_String" />
+                <Field name="authorization" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="user_id" size="1073741823" source="TextInput:" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="8">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="1038" y="546" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="url" selected="True" type="V_String" size="255" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="endpoint_type" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="master_id" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="master_uuid" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="topic" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="agenda" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="created_at" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="expected_start_time" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="expected_end_time" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="created_at_utc" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="expected_start_time_utc" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="expected_end_time_utc" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="expected_duration" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="timezone" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="type" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="uuid" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="endpoint_num" source="TextInput:" type="Byte" />
+                <Field name="endpoint" size="15" source="TextInput:" type="String" />
+                <Field name="url" size="255" source="TextInput:" type="V_String" />
+                <Field name="authorization" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="user_id" size="1073741823" source="TextInput:" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="27">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="1325" y="497" width="421" height="165" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>API Call</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="3">
+          <GuiSettings Plugin="AlteryxConnectorGui.Download.Download">
+            <Position x="1506" y="546" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <URLField>url</URLField>
+              <OutputMode>String</OutputMode>
+              <CodePage>65001</CodePage>
+              <EncodeURLs value="False" />
+              <Headers>
+                <NameValues />
+                <Fields orderChanged="False">
+                  <Field name="authorization" />
+                  <Field name="endpoint_type" selected="False" />
+                  <Field name="master_id" selected="False" />
+                  <Field name="master_uuid" selected="False" />
+                  <Field name="topic" selected="False" />
+                  <Field name="agenda" selected="False" />
+                  <Field name="created_at" selected="False" />
+                  <Field name="expected_start_time" selected="False" />
+                  <Field name="expected_end_time" selected="False" />
+                  <Field name="expected_duration" selected="False" />
+                  <Field name="type" selected="False" />
+                  <Field name="uuid" selected="False" />
+                  <Field name="url" selected="False" />
+                  <Field name="*Unknown" selected="False" />
+                </Fields>
+              </Headers>
+              <Payload>
+                <HTTPAction>GET</HTTPAction>
+                <QueryStringBodyMode>Compose</QueryStringBodyMode>
+                <ComposeNameValues />
+                <ComposeFields orderChanged="False">
+                  <Field name="endpoint_type" selected="False" />
+                  <Field name="master_id" selected="False" />
+                  <Field name="master_uuid" selected="False" />
+                  <Field name="topic" selected="False" />
+                  <Field name="agenda" selected="False" />
+                  <Field name="created_at" selected="False" />
+                  <Field name="expected_start_time" selected="False" />
+                  <Field name="expected_end_time" selected="False" />
+                  <Field name="expected_duration" selected="False" />
+                  <Field name="type" selected="False" />
+                  <Field name="uuid" selected="False" />
+                  <Field name="url" selected="False" />
+                  <Field name="authorization" selected="False" />
+                  <Field name="*Unknown" selected="False" />
+                </ComposeFields>
+              </Payload>
+              <UserName />
+              <Password />
+              <numConnections>2</numConnections>
+              <Timeout>600</Timeout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="endpoint_type" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="master_id" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="master_uuid" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="topic" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="agenda" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="created_at" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="expected_start_time" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="expected_end_time" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="created_at_utc" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="expected_start_time_utc" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="expected_end_time_utc" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="expected_duration" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="timezone" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="type" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="uuid" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="endpoint_num" source="TextInput:" type="Byte" />
+                <Field name="endpoint" size="15" source="TextInput:" type="String" />
+                <Field name="url" size="255" source="Formula: Replace([url], '{id}', [uuid])&#xA;" type="V_String" />
+                <Field name="authorization" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="user_id" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="DownloadData" size="1073741823" source="Download" type="V_WString" />
+                <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxConnectorEngine.dll" EngineDllEntryPoint="AlteryxDownload" />
+        </Node>
+        <Node ToolID="4">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Throttle.Throttle">
+            <Position x="1350" y="546" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <RecordsPerMinute>120</RecordsPerMinute>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>120 Records per minute</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="endpoint_type" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="master_id" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="master_uuid" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="topic" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="agenda" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="created_at" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="expected_start_time" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="expected_end_time" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="created_at_utc" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="expected_start_time_utc" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="expected_end_time_utc" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="expected_duration" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="timezone" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="type" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="uuid" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="endpoint_num" source="TextInput:" type="Byte" />
+                <Field name="endpoint" size="15" source="TextInput:" type="String" />
+                <Field name="url" size="255" source="Formula: Replace([url], '{id}', [uuid])&#xA;" type="V_String" />
+                <Field name="authorization" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="user_id" size="1073741823" source="TextInput:" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxThrottle" />
+        </Node>
+        <Node ToolID="5">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.JSONParse.JSONParse">
+            <Position x="1662" y="546" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <JSON_Field>DownloadData</JSON_Field>
+              <IncludeInOutput value="False" />
+              <SingleField value="True" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="endpoint_type" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="master_id" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="master_uuid" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="topic" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="agenda" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="created_at" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="expected_start_time" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="expected_end_time" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="created_at_utc" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="expected_start_time_utc" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="expected_end_time_utc" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="expected_duration" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="timezone" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="type" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="uuid" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="endpoint_num" source="TextInput:" type="Byte" />
+                <Field name="endpoint" size="15" source="TextInput:" type="String" />
+                <Field name="url" size="255" source="Formula: Replace([url], '{id}', [uuid])&#xA;" type="V_String" />
+                <Field name="authorization" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="user_id" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
+                <Field name="JSON_Name" size="1073741823" source="JSONParse: " type="V_WString" />
+                <Field name="JSON_ValueString" size="1073741823" source="JSONParse: " type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJSONParse" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="28">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="1793" y="497" width="253" height="133" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Parse JSON</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="6">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
+            <Position x="1962" y="546" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <GroupFields>
+                <Field field="endpoint_type" />
+                <Field field="master_id" />
+                <Field field="master_uuid" />
+                <Field field="topic" />
+                <Field field="agenda" />
+                <Field field="created_at" />
+                <Field field="expected_start_time" />
+                <Field field="expected_end_time" />
+                <Field field="created_at_utc" />
+                <Field field="expected_start_time_utc" />
+                <Field field="expected_end_time_utc" />
+                <Field field="expected_duration" />
+                <Field field="timezone" />
+                <Field field="type" />
+                <Field field="uuid" />
+              </GroupFields>
+              <HeaderField field="JSON_Name" />
+              <DataField field="JSON_ValueString" />
+              <Methods>
+                <Method method="First" />
+                <Separator>,</Separator>
+                <FieldSize value="2048" />
+              </Methods>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="endpoint_type" size="1073741823" source="CrossTab:Group:First:" type="V_WString" />
+                <Field name="master_id" size="1073741823" source="CrossTab:Group:First:" type="V_WString" />
+                <Field name="master_uuid" size="1073741823" source="CrossTab:Group:First:" type="V_WString" />
+                <Field name="topic" size="1073741823" source="CrossTab:Group:First:" type="V_WString" />
+                <Field name="agenda" size="1073741823" source="CrossTab:Group:First:" type="V_WString" />
+                <Field name="created_at" size="1073741823" source="CrossTab:Group:First:" type="V_WString" />
+                <Field name="expected_start_time" size="1073741823" source="CrossTab:Group:First:" type="V_WString" />
+                <Field name="expected_end_time" size="1073741823" source="CrossTab:Group:First:" type="V_WString" />
+                <Field name="created_at_utc" size="1073741823" source="CrossTab:Group:First:" type="V_WString" />
+                <Field name="expected_start_time_utc" size="1073741823" source="CrossTab:Group:First:" type="V_WString" />
+                <Field name="expected_end_time_utc" size="1073741823" source="CrossTab:Group:First:" type="V_WString" />
+                <Field name="expected_duration" size="1073741823" source="CrossTab:Group:First:" type="V_WString" />
+                <Field name="timezone" size="1073741823" source="CrossTab:Group:First:" type="V_WString" />
+                <Field name="type" size="1073741823" source="CrossTab:Group:First:" type="V_WString" />
+                <Field name="uuid" size="1073741823" source="CrossTab:Group:First:" type="V_WString" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="endpoint_type" order="Asc" />
+                <Field field="master_id" order="Asc" />
+                <Field field="master_uuid" order="Asc" />
+                <Field field="topic" order="Asc" />
+                <Field field="agenda" order="Asc" />
+                <Field field="created_at" order="Asc" />
+                <Field field="expected_start_time" order="Asc" />
+                <Field field="expected_end_time" order="Asc" />
+                <Field field="created_at_utc" order="Asc" />
+                <Field field="expected_start_time_utc" order="Asc" />
+                <Field field="expected_end_time_utc" order="Asc" />
+                <Field field="expected_duration" order="Asc" />
+                <Field field="timezone" order="Asc" />
+                <Field field="type" order="Asc" />
+                <Field field="uuid" order="Asc" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCrossTab" />
+        </Node>
+        <Node ToolID="7">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="1818" y="546" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="'instance_' + [JSON_Name]" field="JSON_Name" size="1073741823" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText><![CDATA[ ]]></AnnotationText>
+              <DefaultAnnotationText><![CDATA[JSON_Name = 'instance_' + [JSON_Name]
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="endpoint_type" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="master_id" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="master_uuid" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="topic" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="agenda" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="created_at" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="expected_start_time" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="expected_end_time" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="created_at_utc" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="expected_start_time_utc" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="expected_end_time_utc" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="expected_duration" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="timezone" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="type" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="uuid" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="endpoint_num" source="TextInput:" type="Byte" />
+                <Field name="endpoint" size="15" source="TextInput:" type="String" />
+                <Field name="url" size="255" source="Formula: Replace([url], '{id}', [uuid])&#xA;" type="V_String" />
+                <Field name="authorization" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="user_id" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
+                <Field name="JSON_Name" size="1073741823" source="Formula: 'instance_' + [JSON_Name]" type="V_WString" />
+                <Field name="JSON_ValueString" size="1073741823" source="JSONParse: " type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="29">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="3293" y="497" width="152" height="133" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Output</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="17">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+            <Position x="3318" y="546" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Name>Output17</Name>
+              <Abbrev />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Output</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="23">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="68" y="341" width="466" height="409" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Input</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="18">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+            <Position x="450" y="546" />
+          </GuiSettings>
+          <Properties>
+            <Configuration joinByRecordPos="False">
+              <JoinInfo connection="Left">
+                <Field field="endpoint_type" />
+              </JoinInfo>
+              <JoinInfo connection="Right">
+                <Field field="endpoint_type" />
+              </JoinInfo>
+              <SelectConfiguration>
+                <Configuration outputConnection="Join">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="Right_endpoint_type" selected="False" input="Right_" />
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Left">
+              <RecordInfo>
+                <Field name="endpoint_type" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="master_id" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="master_uuid" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="topic" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="agenda" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="created_at" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="expected_start_time" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="expected_end_time" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="created_at_utc" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="expected_start_time_utc" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="expected_end_time_utc" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="expected_duration" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="timezone" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="type" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="uuid" size="1073741823" source="TextInput:" type="V_WString" />
+              </RecordInfo>
+              <SortInfo noProgress="True">
+                <Field field="endpoint_type" />
+              </SortInfo>
+            </MetaInfo>
+            <MetaInfo connection="Join">
+              <RecordInfo>
+                <Field name="endpoint_type" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="master_id" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="master_uuid" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="topic" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="agenda" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="created_at" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="expected_start_time" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="expected_end_time" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="created_at_utc" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="expected_start_time_utc" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="expected_end_time_utc" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="expected_duration" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="timezone" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="type" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="uuid" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="endpoint_num" source="TextInput:" type="Byte" />
+                <Field name="endpoint" size="15" source="TextInput:" type="String" />
+                <Field name="url" size="43" source="TextInput:" type="String" />
+                <Field name="authorization" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="user_id" size="1073741823" source="TextInput:" type="V_WString" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="endpoint_type" order="" />
+              </SortInfo>
+            </MetaInfo>
+            <MetaInfo connection="Right">
+              <RecordInfo>
+                <Field name="endpoint_num" source="TextInput:" type="Byte" />
+                <Field name="endpoint" size="15" source="TextInput:" type="String" />
+                <Field name="endpoint_type" size="7" source="TextInput:" type="String" />
+                <Field name="url" size="43" source="TextInput:" type="String" />
+                <Field name="authorization" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="user_id" size="1073741823" source="TextInput:" type="V_WString" />
+              </RecordInfo>
+              <SortInfo noProgress="True">
+                <Field field="endpoint_type" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+        </Node>
+        <Node ToolID="19">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
+            <Position x="306" y="390" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <UseFileInput value="False" />
+              <Name>Input - Data</Name>
+              <Abbrev>D</Abbrev>
+              <ShowFieldMap value="False" />
+              <Optional value="False" />
+              <TextInput>
+                <Configuration>
+                  <NumRows value="0" />
+                  <Fields>
+                    <Field name="endpoint_type" />
+                    <Field name="master_id" />
+                    <Field name="master_uuid" />
+                    <Field name="topic" />
+                    <Field name="agenda" />
+                    <Field name="created_at" />
+                    <Field name="expected_start_time" />
+                    <Field name="expected_end_time" />
+                    <Field name="created_at_utc" />
+                    <Field name="expected_start_time_utc" />
+                    <Field name="expected_end_time_utc" />
+                    <Field name="expected_duration" />
+                    <Field name="timezone" />
+                    <Field name="type" />
+                    <Field name="uuid" />
+                  </Fields>
+                  <Data />
+                </Configuration>
+              </TextInput>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>D Input</DefaultAnnotationText>
+              <Left value="True" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="endpoint_type" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="master_id" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="master_uuid" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="topic" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="agenda" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="created_at" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="expected_start_time" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="expected_end_time" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="created_at_utc" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="expected_start_time_utc" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="expected_end_time_utc" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="expected_duration" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="timezone" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="type" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="uuid" size="1073741823" source="TextInput:" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
+        </Node>
+        <Node ToolID="21">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
+            <Position x="306" y="558" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <CartesianMode>Error</CartesianMode>
+              <SelectConfiguration>
+                <Configuration outputConnection="Output">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="endpoint_num" source="TextInput:" type="Byte" />
+                <Field name="endpoint" size="15" source="TextInput:" type="String" />
+                <Field name="endpoint_type" size="7" source="TextInput:" type="String" />
+                <Field name="url" size="43" source="TextInput:" type="String" />
+                <Field name="authorization" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="user_id" size="1073741823" source="TextInput:" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
+        </Node>
+        <Node ToolID="22">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
+            <Position x="138" y="666" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <UseFileInput value="False" />
+              <Name>Input - Authentication</Name>
+              <Abbrev>A</Abbrev>
+              <ShowFieldMap value="False" />
+              <Optional value="False" />
+              <TextInput>
+                <Configuration>
+                  <NumRows value="0" />
+                  <Fields>
+                    <Field name="authorization" />
+                    <Field name="user_id" />
+                  </Fields>
+                  <Data />
+                </Configuration>
+              </TextInput>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>A Input</DefaultAnnotationText>
+              <Left value="True" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="authorization" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="user_id" size="1073741823" source="TextInput:" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
+        </Node>
+        <Node ToolID="24">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+            <Position x="138" y="546" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <NumRows value="2" />
+              <Fields>
+                <Field name="endpoint_num" />
+                <Field name="endpoint" />
+                <Field name="endpoint_type" />
+                <Field name="url" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>5</c>
+                  <c>webinar_details</c>
+                  <c>webinar</c>
+                  <c>https://api.zoom.us/v2/report/webinars/{id}</c>
+                </r>
+                <r>
+                  <c>6</c>
+                  <c>meeting_details</c>
+                  <c>meeting</c>
+                  <c>https://api.zoom.us/v2/report/meetings/{id}</c>
+                </r>
+              </Data>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="endpoint_num" source="TextInput:" type="Byte" />
+                <Field name="endpoint" size="15" source="TextInput:" type="String" />
+                <Field name="endpoint_type" size="7" source="TextInput:" type="String" />
+                <Field name="url" size="43" source="TextInput:" type="String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="43">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="581" y="413" width="385" height="217" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Assert Field</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="40">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+            <Position x="882" y="546" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <ByName_ErrorMode>Ignore</ByName_ErrorMode>
+              <ByName_OutputMode>All</ByName_OutputMode>
+              <Mode>ByName</Mode>
+              <SetOutputOrder value="True" />
+              <OutputOrder>
+                <Connection>#1</Connection>
+                <Connection>#2</Connection>
+              </OutputOrder>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="endpoint_type" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="master_id" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="master_uuid" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="topic" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="agenda" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="created_at" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="expected_start_time" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="expected_end_time" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="created_at_utc" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="expected_start_time_utc" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="expected_end_time_utc" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="expected_duration" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="timezone" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="type" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="uuid" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="endpoint_num" source="TextInput:" type="Byte" />
+                <Field name="endpoint" size="15" source="TextInput:" type="String" />
+                <Field name="url" size="43" source="TextInput:" type="String" />
+                <Field name="authorization" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="user_id" size="1073741823" source="TextInput:" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+        </Node>
+        <Node ToolID="41">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="738" y="462" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="uuid" size="1073741823" source="TextInput:" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="42">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+            <Position x="606" y="462" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <NumRows value="0" />
+              <Fields>
+                <Field name="uuid" />
+              </Fields>
+              <Data />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="uuid" size="1073741823" source="TextInput:" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="36" Connection="Output" />
+      <Destination ToolID="39" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="37" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="39" Connection="Output" />
+      <Destination ToolID="37" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="37" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="45" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="45" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="18" Connection="Join" />
+      <Destination ToolID="40" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="41" Connection="Output" />
+      <Destination ToolID="40" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="Output" />
+      <Destination ToolID="18" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="Output" />
+      <Destination ToolID="18" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Output" />
+      <Destination ToolID="21" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="24" Connection="Output" />
+      <Destination ToolID="21" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="40" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="42" Connection="Output" />
+      <Destination ToolID="41" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="False" />
+    <ZoomLevel value="-1" />
+    <LayoutType>Horizontal</LayoutType>
+    <Constants>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Macro Output (17)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Macro Input (19)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Macro Input (22)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+    </Constants>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Macro_040_Instance_Details</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+    <RuntimeProperties>
+      <Actions />
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Questions</Description>
+          <Name>Tab (15)</Name>
+          <ToolId value="15" />
+          <Questions>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description>Macro Output (17)</Description>
+              <Name>Macro Output (17)</Name>
+              <ToolId value="17" />
+            </Question>
+            <Question>
+              <Type>MacroInput</Type>
+              <Description />
+              <Name>Macro Input (19)</Name>
+              <ToolId value="19" />
+            </Question>
+            <Question>
+              <Type>MacroInput</Type>
+              <Description />
+              <Name>Macro Input (22)</Name>
+              <ToolId value="22" />
+            </Question>
+          </Questions>
+        </Question>
+      </Questions>
+      <ModuleType>Macro</ModuleType>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="False" />
+      <MacroImage>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</MacroImage>
+      <MacroInputs />
+      <MacroOutputs />
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools>
+        <Tool ToolId="45" Selected="True" />
+        <Tool ToolId="4" Selected="True" />
+        <Tool ToolId="17" Selected="True" />
+        <Tool ToolId="19" Selected="True" />
+        <Tool ToolId="22" Selected="True" />
+      </Wiz_OpenOutputTools>
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>

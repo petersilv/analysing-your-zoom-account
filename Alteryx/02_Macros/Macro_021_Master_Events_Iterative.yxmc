@@ -1,0 +1,954 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2020.2">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="23">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="54" y="54" width="1212" height="228" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text />
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor r="247" g="247" b="247" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="24">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="78" y="66" width="1164" height="120" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Zoom Data - Master Events - Iterative</Text>
+          <Font name="Segoe UI" size="36" style="1" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="3" />
+          <Justification Justification="3" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="25">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="78" y="186" width="1164" height="84" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Description:   Loop through pages of events
+Author:        Peter Silvester &amp; Craig Steven
+Last Update:   2020-06-23 / Peter Silvester</Text>
+          <Font name="Courier New" size="15.75" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="3" />
+          <Justification Justification="3" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="28">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="2141" y="425" width="171.8357" height="133" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Iteration Output</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="11">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+            <Position x="2166" y="474" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Name>Output - Iteration</Name>
+              <Abbrev>I</Abbrev>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>I Output</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="33">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="1637" y="425" width="457" height="177" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Identify if another iteration is needed (page count&gt; page number)</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="10">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="1662" y="486" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="endpoint_num" source="CrossTab:Group:First:" type="Byte" />
+                <Field name="endpoint" size="255" source="CrossTab:Group:First:" type="V_String" />
+                <Field name="endpoint_type" size="255" source="CrossTab:Group:First:" type="V_String" />
+                <Field name="url" size="1073741823" source="(Multiple Sources)" type="V_WString" />
+                <Field name="user_id" size="255" source="CrossTab:Group:First:" type="V_String" />
+                <Field name="authorization" size="255" source="CrossTab:Group:First:" type="V_String" />
+                <Field name="page_number" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="page_count" size="1073741823" source="TextInput:" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="9">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="1830" y="486" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Expression>[page_number] &lt; [page_count]</Expression>
+              <Mode>Custom</Mode>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>[page_number] &lt; [page_count]</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="True">
+              <RecordInfo>
+                <Field name="endpoint_num" source="CrossTab:Group:First:" type="Byte" />
+                <Field name="endpoint" size="255" source="CrossTab:Group:First:" type="V_String" />
+                <Field name="endpoint_type" size="255" source="CrossTab:Group:First:" type="V_String" />
+                <Field name="url" size="1073741823" source="(Multiple Sources)" type="V_WString" />
+                <Field name="user_id" size="255" source="CrossTab:Group:First:" type="V_String" />
+                <Field name="authorization" size="255" source="CrossTab:Group:First:" type="V_String" />
+                <Field name="page_number" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="page_count" size="1073741823" source="TextInput:" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo connection="False">
+              <RecordInfo>
+                <Field name="endpoint_num" source="CrossTab:Group:First:" type="Byte" />
+                <Field name="endpoint" size="255" source="CrossTab:Group:First:" type="V_String" />
+                <Field name="endpoint_type" size="255" source="CrossTab:Group:First:" type="V_String" />
+                <Field name="url" size="1073741823" source="(Multiple Sources)" type="V_WString" />
+                <Field name="user_id" size="255" source="CrossTab:Group:First:" type="V_String" />
+                <Field name="authorization" size="255" source="CrossTab:Group:First:" type="V_String" />
+                <Field name="page_number" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="page_count" size="1073741823" source="TextInput:" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="7">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="2010" y="474" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="endpoint_num" selected="True" />
+                <SelectField field="endpoint" selected="True" />
+                <SelectField field="endpoint_type" selected="True" />
+                <SelectField field="url" selected="True" />
+                <SelectField field="user_id" selected="True" />
+                <SelectField field="authorization" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="endpoint_num" source="CrossTab:Group:First:" type="Byte" />
+                <Field name="endpoint" size="255" source="CrossTab:Group:First:" type="V_String" />
+                <Field name="endpoint_type" size="255" source="CrossTab:Group:First:" type="V_String" />
+                <Field name="url" size="1073741823" source="(Multiple Sources)" type="V_WString" />
+                <Field name="user_id" size="255" source="CrossTab:Group:First:" type="V_String" />
+                <Field name="authorization" size="255" source="CrossTab:Group:First:" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="32">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="1205" y="353" width="385" height="217" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Assert Fields</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="29">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+            <Position x="1230" y="402" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <NumRows value="0" />
+              <Fields>
+                <Field name="page_number" />
+                <Field name="page_count" />
+                <Field name="url" />
+              </Fields>
+              <Data />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="page_number" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="page_count" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="url" size="1073741823" source="TextInput:" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+        </Node>
+        <Node ToolID="30">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+            <Position x="1506" y="486" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <ByName_ErrorMode>Ignore</ByName_ErrorMode>
+              <ByName_OutputMode>All</ByName_OutputMode>
+              <Mode>ByName</Mode>
+              <SetOutputOrder value="True" />
+              <OutputOrder>
+                <Connection>#1</Connection>
+                <Connection>#2</Connection>
+              </OutputOrder>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="endpoint_num" source="CrossTab:Group:First:" type="Byte" />
+                <Field name="endpoint" size="255" source="CrossTab:Group:First:" type="V_String" />
+                <Field name="endpoint_type" size="255" source="CrossTab:Group:First:" type="V_String" />
+                <Field name="url" size="1073741823" source="(Multiple Sources)" type="V_WString" />
+                <Field name="user_id" size="255" source="CrossTab:Group:First:" type="V_String" />
+                <Field name="authorization" size="255" source="CrossTab:Group:First:" type="V_String" />
+                <Field name="page_number" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="page_count" size="1073741823" source="TextInput:" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+        </Node>
+        <Node ToolID="31">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="1362" y="402" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="page_number" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="page_count" size="1073741823" source="TextInput:" type="V_WString" />
+                <Field name="url" size="1073741823" source="TextInput:" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="581" y="449" width="253" height="133" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Master List API Call</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="13">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.JSONParse.JSONParse">
+            <Position x="750" y="498" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <JSON_Field>DownloadData</JSON_Field>
+              <IncludeInOutput value="False" />
+              <SingleField value="True" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="endpoint_num" source="TextInput:" type="Byte" />
+                <Field name="endpoint" size="255" source="TextInput:" type="V_String" />
+                <Field name="endpoint_type" size="255" source="TextInput:" type="V_String" />
+                <Field name="url" size="500" source="Formula: Replace(&#xA;[url], &#xA;'{user_id}',&#xA;[user_id])" type="V_WString" />
+                <Field name="user_id" size="255" source="TextInput:" type="V_String" />
+                <Field name="authorization" size="255" source="TextInput:" type="V_String" />
+                <Field name="page_number" size="255" source="Formula: [Engine.IterationNumber]+1&#xA;" type="V_String" />
+                <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
+                <Field name="JSON_Name" size="1073741823" source="JSONParse: " type="V_WString" />
+                <Field name="JSON_ValueString" size="1073741823" source="JSONParse: " type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJSONParse" />
+        </Node>
+        <Node ToolID="12">
+          <GuiSettings Plugin="AlteryxConnectorGui.Download.Download">
+            <Position x="606" y="498" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <URLField>url</URLField>
+              <OutputMode>String</OutputMode>
+              <CodePage>65001</CodePage>
+              <EncodeURLs value="True" />
+              <Headers>
+                <NameValues />
+                <Fields orderChanged="False">
+                  <Field name="authorization" />
+                  <Field name="endpoint_num" selected="False" />
+                  <Field name="endpoint" selected="False" />
+                  <Field name="endpoint_type" selected="False" />
+                  <Field name="url" selected="False" />
+                  <Field name="user_id" selected="False" />
+                  <Field name="page_number" selected="False" />
+                  <Field name="*Unknown" selected="False" />
+                </Fields>
+              </Headers>
+              <Payload>
+                <HTTPAction>GET</HTTPAction>
+                <QueryStringBodyMode>Compose</QueryStringBodyMode>
+                <ComposeNameValues />
+                <ComposeFields orderChanged="False">
+                  <Field name="page_number" />
+                  <Field name="endpoint_num" selected="False" />
+                  <Field name="endpoint" selected="False" />
+                  <Field name="endpoint_type" selected="False" />
+                  <Field name="url" selected="False" />
+                  <Field name="user_id" selected="False" />
+                  <Field name="authorization" selected="False" />
+                  <Field name="*Unknown" selected="False" />
+                </ComposeFields>
+              </Payload>
+              <UserName />
+              <Password />
+              <numConnections>2</numConnections>
+              <Timeout>600</Timeout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="endpoint_num" source="TextInput:" type="Byte" />
+                <Field name="endpoint" size="255" source="TextInput:" type="V_String" />
+                <Field name="endpoint_type" size="255" source="TextInput:" type="V_String" />
+                <Field name="url" size="500" source="Formula: Replace(&#xA;[url], &#xA;'{user_id}',&#xA;[user_id])" type="V_WString" />
+                <Field name="user_id" size="255" source="TextInput:" type="V_String" />
+                <Field name="authorization" size="255" source="TextInput:" type="V_String" />
+                <Field name="page_number" size="255" source="Formula: [Engine.IterationNumber]+1&#xA;" type="V_String" />
+                <Field name="DownloadData" size="1073741823" source="Download" type="V_WString" />
+                <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxConnectorEngine.dll" EngineDllEntryPoint="AlteryxDownload" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="26">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="68" y="449" width="142" height="133" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Input</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="22">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
+            <Position x="126" y="498" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <UseFileInput value="False" />
+              <Name>Input22</Name>
+              <Abbrev />
+              <ShowFieldMap value="False" />
+              <Optional value="False" />
+              <TextInput>
+                <Configuration>
+                  <NumRows value="2" />
+                  <Fields>
+                    <Field name="endpoint_num" />
+                    <Field name="endpoint" />
+                    <Field name="endpoint_type" />
+                    <Field name="url" />
+                    <Field name="user_id" />
+                    <Field name="authorization" />
+                  </Fields>
+                  <Data>
+                    <r>
+                      <c>1</c>
+                      <c>webinar_list</c>
+                      <c>webinar</c>
+                      <c>https://api.zoom.us/v2/users/{user_id}/webinars?page_size=5</c>
+                      <c>abc</c>
+                      <c>abc</c>
+                    </r>
+                    <r>
+                      <c>2</c>
+                      <c>meeting_list</c>
+                      <c>meeting</c>
+                      <c>https://api.zoom.us/v2/users/{user_id}/meetings?page_size=5</c>
+                      <c>abc</c>
+                      <c>abc</c>
+                    </r>
+                  </Data>
+                </Configuration>
+              </TextInput>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Input</DefaultAnnotationText>
+              <Left value="True" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="endpoint_num" source="TextInput:" type="Byte" />
+                <Field name="endpoint" size="12" source="TextInput:" type="String" />
+                <Field name="endpoint_type" size="7" source="TextInput:" type="String" />
+                <Field name="url" size="59" source="TextInput:" type="String" />
+                <Field name="user_id" size="3" source="TextInput:" type="String" />
+                <Field name="authorization" size="3" source="TextInput:" type="String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="27">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="881" y="677" width="164" height="133" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Data Output</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="2">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+            <Position x="906" y="726" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Name>Output - Data</Name>
+              <Abbrev>D</Abbrev>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>D Output</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="281" y="449" width="253" height="149" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>URL &amp; Page Number</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="19">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="306" y="498" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="endpoint" selected="True" type="V_String" size="255" />
+                <SelectField field="endpoint_type" selected="True" type="V_String" size="255" />
+                <SelectField field="url" selected="True" type="V_WString" size="500" />
+                <SelectField field="user_id" selected="True" type="V_String" size="255" />
+                <SelectField field="authorization" selected="True" type="V_String" size="255" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="endpoint_num" source="TextInput:" type="Byte" />
+                <Field name="endpoint" size="255" source="TextInput:" type="V_String" />
+                <Field name="endpoint_type" size="255" source="TextInput:" type="V_String" />
+                <Field name="url" size="500" source="TextInput:" type="V_WString" />
+                <Field name="user_id" size="255" source="TextInput:" type="V_String" />
+                <Field name="authorization" size="255" source="TextInput:" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="3">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="450" y="498" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="Replace(&#xA;[url], &#xA;'{user_id}',&#xA;[user_id])" field="url" size="500" type="V_WString" />
+                <FormulaField expression="[Engine.IterationNumber]+1&#xA;" field="page_number" size="255" type="V_String" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>URL</AnnotationText>
+              <DefaultAnnotationText>url = Replace(
+[url], 
+'{user_id}',
+[user_id])
+page_number = [Engine.IterationNu...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="endpoint_num" source="TextInput:" type="Byte" />
+                <Field name="endpoint" size="255" source="TextInput:" type="V_String" />
+                <Field name="endpoint_type" size="255" source="TextInput:" type="V_String" />
+                <Field name="url" size="500" source="Formula: Replace(&#xA;[url], &#xA;'{user_id}',&#xA;[user_id])" type="V_WString" />
+                <Field name="user_id" size="255" source="TextInput:" type="V_String" />
+                <Field name="authorization" size="255" source="TextInput:" type="V_String" />
+                <Field name="page_number" size="255" source="Formula: [Engine.IterationNumber]+1&#xA;" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="881" y="437" width="277" height="192" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Parse JSON</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="8">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
+            <Position x="1074" y="486" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <GroupFields>
+                <Field field="endpoint_num" />
+                <Field field="endpoint" />
+                <Field field="endpoint_type" />
+                <Field field="url" />
+                <Field field="user_id" />
+                <Field field="authorization" />
+              </GroupFields>
+              <HeaderField field="JSON_Name" />
+              <DataField field="JSON_ValueString" />
+              <Methods>
+                <Method method="First" />
+                <Separator>,</Separator>
+                <FieldSize value="2048" />
+              </Methods>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="endpoint_num" source="CrossTab:Group:First:" type="Byte" />
+                <Field name="endpoint" size="255" source="CrossTab:Group:First:" type="V_String" />
+                <Field name="endpoint_type" size="255" source="CrossTab:Group:First:" type="V_String" />
+                <Field name="url" size="500" source="CrossTab:Group:First:" type="V_WString" />
+                <Field name="user_id" size="255" source="CrossTab:Group:First:" type="V_String" />
+                <Field name="authorization" size="255" source="CrossTab:Group:First:" type="V_String" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="endpoint_num" order="Asc" />
+                <Field field="endpoint" order="Asc" />
+                <Field field="endpoint_type" order="Asc" />
+                <Field field="url" order="Asc" />
+                <Field field="user_id" order="Asc" />
+                <Field field="authorization" order="Asc" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCrossTab" />
+        </Node>
+        <Node ToolID="6">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="906" y="498" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Expression>[JSON_Name] in ('page_count','page_number')</Expression>
+              <Mode>Custom</Mode>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Filter for webinar/meeting details</AnnotationText>
+              <DefaultAnnotationText>[JSON_Name] in ('page_count','page_number')</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="True">
+              <RecordInfo>
+                <Field name="endpoint_num" source="TextInput:" type="Byte" />
+                <Field name="endpoint" size="255" source="TextInput:" type="V_String" />
+                <Field name="endpoint_type" size="255" source="TextInput:" type="V_String" />
+                <Field name="url" size="500" source="Formula: Replace(&#xA;[url], &#xA;'{user_id}',&#xA;[user_id])" type="V_WString" />
+                <Field name="user_id" size="255" source="TextInput:" type="V_String" />
+                <Field name="authorization" size="255" source="TextInput:" type="V_String" />
+                <Field name="page_number" size="255" source="Formula: [Engine.IterationNumber]+1&#xA;" type="V_String" />
+                <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
+                <Field name="JSON_Name" size="1073741823" source="JSONParse: " type="V_WString" />
+                <Field name="JSON_ValueString" size="1073741823" source="JSONParse: " type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo connection="False">
+              <RecordInfo>
+                <Field name="endpoint_num" source="TextInput:" type="Byte" />
+                <Field name="endpoint" size="255" source="TextInput:" type="V_String" />
+                <Field name="endpoint_type" size="255" source="TextInput:" type="V_String" />
+                <Field name="url" size="500" source="Formula: Replace(&#xA;[url], &#xA;'{user_id}',&#xA;[user_id])" type="V_WString" />
+                <Field name="user_id" size="255" source="TextInput:" type="V_String" />
+                <Field name="authorization" size="255" source="TextInput:" type="V_String" />
+                <Field name="page_number" size="255" source="Formula: [Engine.IterationNumber]+1&#xA;" type="V_String" />
+                <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
+                <Field name="JSON_Name" size="1073741823" source="JSONParse: " type="V_WString" />
+                <Field name="JSON_ValueString" size="1073741823" source="JSONParse: " type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="True" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="29" Connection="Output" />
+      <Destination ToolID="31" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="30" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="31" Connection="Output" />
+      <Destination ToolID="30" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="30" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Output" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="True" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="False" />
+    <ZoomLevel value="-4" />
+    <LayoutType>Horizontal</LayoutType>
+    <Constants>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Macro Input (22)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+    </Constants>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Macro_Master Events_Iterative</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="False" />
+    </Events>
+    <RuntimeProperties>
+      <Actions />
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Questions</Description>
+          <Name>Tab (1)</Name>
+          <ToolId value="1" />
+          <Questions>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description>Macro Output (17)</Description>
+              <Name>Macro Output (2)</Name>
+              <ToolId value="2" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description>Macro Output (17)</Description>
+              <Name>Macro Output (11)</Name>
+              <ToolId value="11" />
+            </Question>
+            <Question>
+              <Type>MacroInput</Type>
+              <Description />
+              <Name>Macro Input (22)</Name>
+              <ToolId value="22" />
+            </Question>
+          </Questions>
+        </Question>
+      </Questions>
+      <ModuleType>Macro</ModuleType>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="False" />
+      <MacroImageStd value="39" />
+      <MacroInputs />
+      <MacroOutputs />
+      <IterativeMacro>
+        <Input>Input22</Input>
+        <Output>Output - Iteration</Output>
+        <IterationLimit value="100" />
+        <LimitBehavior>Error</LimitBehavior>
+        <OutputMode>AutoByName</OutputMode>
+      </IterativeMacro>
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools>
+        <Tool ToolId="22" Selected="True" />
+        <Tool ToolId="2" Selected="True" />
+        <Tool ToolId="11" Selected="True" />
+      </Wiz_OpenOutputTools>
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>
