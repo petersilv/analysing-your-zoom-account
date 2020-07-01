@@ -3,7 +3,18 @@
 
 Icon?
 
+# Alteryx
 00_Archive/
+Workflow_TIL_All_Endpoints.yxmd
 
+# Data
 Data/Event_Details.csv
 Data/Event_Participants.csv
+
+# Other
+Other/Create_Sample_Data/
+Other/Documentation/
+Other/Internal/
+
+# Tableau
+Tableau/
