@@ -1,0 +1,923 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2020.2">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="282" y="330" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">..\..\Other\timezone_data.csv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>,</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>timezone_data.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="country_code" size="254" source="File: Y:\Peter Silvester\Side Projects\til\zoom-data\Analysing Your Zoom Account\Other\timezone_data.csv" type="V_String" />
+            <Field name="zone_name" size="254" source="File: Y:\Peter Silvester\Side Projects\til\zoom-data\Analysing Your Zoom Account\Other\timezone_data.csv" type="V_String" />
+            <Field name="zone_id" size="254" source="File: Y:\Peter Silvester\Side Projects\til\zoom-data\Analysing Your Zoom Account\Other\timezone_data.csv" type="V_String" />
+            <Field name="abbreviation" size="254" source="File: Y:\Peter Silvester\Side Projects\til\zoom-data\Analysing Your Zoom Account\Other\timezone_data.csv" type="V_String" />
+            <Field name="time_start" size="254" source="File: Y:\Peter Silvester\Side Projects\til\zoom-data\Analysing Your Zoom Account\Other\timezone_data.csv" type="V_String" />
+            <Field name="time_end" size="254" source="File: Y:\Peter Silvester\Side Projects\til\zoom-data\Analysing Your Zoom Account\Other\timezone_data.csv" type="V_String" />
+            <Field name="gmt_offset" size="254" source="File: Y:\Peter Silvester\Side Projects\til\zoom-data\Analysing Your Zoom Account\Other\timezone_data.csv" type="V_String" />
+            <Field name="dst" size="254" source="File: Y:\Peter Silvester\Side Projects\til\zoom-data\Analysing Your Zoom Account\Other\timezone_data.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
+        <Position x="54" y="426" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UseFileInput value="False" />
+          <Name>Input</Name>
+          <Abbrev />
+          <ShowFieldMap value="False" />
+          <Optional value="False" />
+          <TextInput>
+            <Configuration>
+              <NumRows value="5" />
+              <Fields>
+                <Field name="Field_1" />
+                <Field name="Field_2" />
+                <Field name="Field_3" />
+                <Field name="timezone" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>2020-04-21 13:14:19</c>
+                  <c>2020-05-14 14:00:00</c>
+                  <c>2020-05-14 15:30:00</c>
+                  <c>Europe/London</c>
+                </r>
+                <r>
+                  <c>2019-09-13 10:29:48</c>
+                  <c>2020-08-28 11:30:00</c>
+                  <c>2020-08-28 12:00:00</c>
+                  <c>Europe/London</c>
+                </r>
+                <r>
+                  <c>2020-06-17 16:18:36</c>
+                  <c>2020-06-18 14:00:00</c>
+                  <c>2020-06-18 16:00:00</c>
+                  <c>Europe/London</c>
+                </r>
+                <r>
+                  <c>2020-06-19 12:48:30</c>
+                  <c>2020-06-23 08:45:00</c>
+                  <c>2020-06-23 14:00:00</c>
+                  <c>Europe/London</c>
+                </r>
+                <r>
+                  <c>2020-06-19 12:49:51</c>
+                  <c>2020-06-24 08:45:00</c>
+                  <c>2020-06-24 14:00:00</c>
+                  <c>Europe/London</c>
+                </r>
+              </Data>
+            </Configuration>
+          </TextInput>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Input</DefaultAnnotationText>
+          <Left value="True" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Field_1" source="TextInput:" type="DateTime" />
+            <Field name="Field_2" source="TextInput:" type="DateTime" />
+            <Field name="Field_3" source="TextInput:" type="DateTime" />
+            <Field name="timezone" size="13" source="TextInput:" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="606" y="342" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="zone_name" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="timezone" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Left">
+          <RecordInfo>
+            <Field name="country_code" size="254" source="File: Y:\Peter Silvester\Side Projects\til\zoom-data\Analysing Your Zoom Account\Other\timezone_data.csv" type="V_String" />
+            <Field name="zone_name" size="254" source="File: Y:\Peter Silvester\Side Projects\til\zoom-data\Analysing Your Zoom Account\Other\timezone_data.csv" type="V_String" />
+            <Field name="zone_id" size="254" source="File: Y:\Peter Silvester\Side Projects\til\zoom-data\Analysing Your Zoom Account\Other\timezone_data.csv" type="V_String" />
+            <Field name="abbreviation" size="254" source="File: Y:\Peter Silvester\Side Projects\til\zoom-data\Analysing Your Zoom Account\Other\timezone_data.csv" type="V_String" />
+            <Field name="time_start" source="File: Y:\Peter Silvester\Side Projects\til\zoom-data\Analysing Your Zoom Account\Other\timezone_data.csv" type="DateTime" />
+            <Field name="time_end" source="File: Y:\Peter Silvester\Side Projects\til\zoom-data\Analysing Your Zoom Account\Other\timezone_data.csv" type="DateTime" />
+            <Field name="gmt_offset" source="File: Y:\Peter Silvester\Side Projects\til\zoom-data\Analysing Your Zoom Account\Other\timezone_data.csv" type="Int64" />
+            <Field name="dst" source="File: Y:\Peter Silvester\Side Projects\til\zoom-data\Analysing Your Zoom Account\Other\timezone_data.csv" type="Byte" />
+          </RecordInfo>
+          <SortInfo noProgress="True">
+            <Field field="zone_name" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="Join">
+          <RecordInfo>
+            <Field name="country_code" size="254" source="File: Y:\Peter Silvester\Side Projects\til\zoom-data\Analysing Your Zoom Account\Other\timezone_data.csv" type="V_String" />
+            <Field name="zone_name" size="254" source="File: Y:\Peter Silvester\Side Projects\til\zoom-data\Analysing Your Zoom Account\Other\timezone_data.csv" type="V_String" />
+            <Field name="zone_id" size="254" source="File: Y:\Peter Silvester\Side Projects\til\zoom-data\Analysing Your Zoom Account\Other\timezone_data.csv" type="V_String" />
+            <Field name="abbreviation" size="254" source="File: Y:\Peter Silvester\Side Projects\til\zoom-data\Analysing Your Zoom Account\Other\timezone_data.csv" type="V_String" />
+            <Field name="time_start" source="File: Y:\Peter Silvester\Side Projects\til\zoom-data\Analysing Your Zoom Account\Other\timezone_data.csv" type="DateTime" />
+            <Field name="time_end" source="File: Y:\Peter Silvester\Side Projects\til\zoom-data\Analysing Your Zoom Account\Other\timezone_data.csv" type="DateTime" />
+            <Field name="gmt_offset" source="File: Y:\Peter Silvester\Side Projects\til\zoom-data\Analysing Your Zoom Account\Other\timezone_data.csv" type="Int64" />
+            <Field name="dst" source="File: Y:\Peter Silvester\Side Projects\til\zoom-data\Analysing Your Zoom Account\Other\timezone_data.csv" type="Byte" />
+            <Field name="convert_from_utc_record_id" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Field_1" source="TextInput:" type="DateTime" />
+            <Field name="Field_2" source="TextInput:" type="DateTime" />
+            <Field name="Field_3" source="TextInput:" type="DateTime" />
+            <Field name="timezone" size="13" source="TextInput:" type="String" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="zone_name" order="" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="Right">
+          <RecordInfo>
+            <Field name="convert_from_utc_record_id" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Field_1" source="TextInput:" type="DateTime" />
+            <Field name="Field_2" source="TextInput:" type="DateTime" />
+            <Field name="Field_3" source="TextInput:" type="DateTime" />
+            <Field name="timezone" size="13" source="TextInput:" type="String" />
+          </RecordInfo>
+          <SortInfo noProgress="True">
+            <Field field="timezone" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.DropDownListBox.ListBox">
+        <Position x="894" y="54" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>List Box (9)</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+        <Position x="906" y="150" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Update Value</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="2298" y="438" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>Output</Name>
+          <Abbrev />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Output</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.DropDownListBox.DropDown">
+        <Position x="594" y="54" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Drop Down (15)</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+        <Position x="606" y="150" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Update Value</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="426" y="330" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="time_start" selected="True" type="DateTime" size="19" />
+            <SelectField field="time_end" selected="True" type="DateTime" size="19" />
+            <SelectField field="gmt_offset" selected="True" type="Int64" size="8" />
+            <SelectField field="dst" selected="True" type="Byte" size="1" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="country_code" size="254" source="File: Y:\Peter Silvester\Side Projects\til\zoom-data\Analysing Your Zoom Account\Other\timezone_data.csv" type="V_String" />
+            <Field name="zone_name" size="254" source="File: Y:\Peter Silvester\Side Projects\til\zoom-data\Analysing Your Zoom Account\Other\timezone_data.csv" type="V_String" />
+            <Field name="zone_id" size="254" source="File: Y:\Peter Silvester\Side Projects\til\zoom-data\Analysing Your Zoom Account\Other\timezone_data.csv" type="V_String" />
+            <Field name="abbreviation" size="254" source="File: Y:\Peter Silvester\Side Projects\til\zoom-data\Analysing Your Zoom Account\Other\timezone_data.csv" type="V_String" />
+            <Field name="time_start" source="File: Y:\Peter Silvester\Side Projects\til\zoom-data\Analysing Your Zoom Account\Other\timezone_data.csv" type="DateTime" />
+            <Field name="time_end" source="File: Y:\Peter Silvester\Side Projects\til\zoom-data\Analysing Your Zoom Account\Other\timezone_data.csv" type="DateTime" />
+            <Field name="gmt_offset" source="File: Y:\Peter Silvester\Side Projects\til\zoom-data\Analysing Your Zoom Account\Other\timezone_data.csv" type="Int64" />
+            <Field name="dst" source="File: Y:\Peter Silvester\Side Projects\til\zoom-data\Analysing Your Zoom Account\Other\timezone_data.csv" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="30">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.FieldInfo.FieldInfo">
+        <Position x="618" y="534" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Name" size="26" source="FieldInfo" type="V_String" />
+            <Field name="Type" size="8" source="FieldInfo" type="String" />
+            <Field name="Size" source="FieldInfo" type="Int32" />
+            <Field name="Scale" source="FieldInfo" type="Int32" />
+            <Field name="Source" size="26" source="FieldInfo" type="V_WString" />
+            <Field name="Description" size="1" source="FieldInfo" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFieldInfo" />
+    </Node>
+    <Node ToolID="31">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="894" y="534" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[Name] IN ("Field_1")</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Name] IN ("Field_1")</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="Name" size="26" source="FieldInfo" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="Name" size="26" source="FieldInfo" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="33">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="762" y="534" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Name" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Name" size="26" source="FieldInfo" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="35">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+        <Position x="426" y="426" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldName>convert_from_utc_record_id</FieldName>
+          <StartValue>1</StartValue>
+          <FieldType>Int32</FieldType>
+          <FieldSize>6</FieldSize>
+          <Position>0</Position>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="convert_from_utc_record_id" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Field_1" source="TextInput:" type="DateTime" />
+            <Field name="Field_2" source="TextInput:" type="DateTime" />
+            <Field name="Field_3" source="TextInput:" type="DateTime" />
+            <Field name="timezone" size="13" source="TextInput:" type="String" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="convert_from_utc_record_id" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+    </Node>
+    <Node ToolID="36">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Transpose.Transpose">
+        <Position x="1422" y="330" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ErrorWarn>Warn</ErrorWarn>
+          <KeyFields>
+            <Field field="convert_from_utc_record_id" />
+          </KeyFields>
+          <DataFields>
+            <Field field="convert_from_utc_record_id" selected="False" />
+            <Field field="Field_1" selected="True" />
+            <Field field="Field_1_utc" selected="True" />
+            <Field field="*Unknown" selected="True" />
+          </DataFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="convert_from_utc_record_id" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Name" size="11" source="Transpose:" type="String" />
+            <Field name="Value" source="Formula: (Multiple Sources)" type="DateTime" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTranspose" />
+    </Node>
+    <Node ToolID="37">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
+        <Position x="1722" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <GroupFields>
+            <Field field="convert_from_utc_record_id" />
+          </GroupFields>
+          <HeaderField field="Name" />
+          <DataField field="Value" />
+          <Methods>
+            <Method method="First" />
+          </Methods>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="convert_from_utc_record_id" source="CrossTab:Group:First:" type="Int32" />
+            <Field name="Field_1" source="Formula: (Multiple Sources)" type="DateTime" />
+            <Field name="Field_1_utc" source="Formula: (Multiple Sources)" type="DateTime" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="convert_from_utc_record_id" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCrossTab" />
+    </Node>
+    <Node ToolID="38">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="1566" y="330" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>IsNotNull</Operator>
+            <Field>Value</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2020-06-29 16:09:42</PeriodDate>
+              <PeriodType>days</PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>2020-06-29</Operand>
+              <StartDate>2020-06-29 16:09:42</StartDate>
+              <EndDate>2020-06-29 16:09:42</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>!IsNull([Value])</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="convert_from_utc_record_id" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Name" size="11" source="Transpose:" type="String" />
+            <Field name="Value" source="Formula: (Multiple Sources)" type="DateTime" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="convert_from_utc_record_id" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Name" size="11" source="Transpose:" type="String" />
+            <Field name="Value" source="Formula: (Multiple Sources)" type="DateTime" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="40">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="1890" y="438" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="convert_from_utc_record_id" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="convert_from_utc_record_id" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_convert_from_utc_record_id" selected="False" input="Left_" />
+                <SelectField field="Right_convert_from_utc_record_id" selected="False" rename="Right_convert_from_utc_record_id" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Left">
+          <RecordInfo>
+            <Field name="convert_from_utc_record_id" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Field_2" source="TextInput:" type="DateTime" />
+            <Field name="Field_3" source="TextInput:" type="DateTime" />
+            <Field name="timezone" size="13" source="TextInput:" type="String" />
+          </RecordInfo>
+          <SortInfo noProgress="True">
+            <Field field="convert_from_utc_record_id" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="Join">
+          <RecordInfo>
+            <Field name="Field_2" source="TextInput:" type="DateTime" />
+            <Field name="Field_3" source="TextInput:" type="DateTime" />
+            <Field name="timezone" size="13" source="TextInput:" type="String" />
+            <Field name="Field_1" source="Formula: (Multiple Sources)" type="DateTime" />
+            <Field name="Field_1_utc" source="Formula: (Multiple Sources)" type="DateTime" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Right">
+          <RecordInfo>
+            <Field name="convert_from_utc_record_id" source="CrossTab:Group:First:" type="Int32" />
+            <Field name="Field_1" source="Formula: (Multiple Sources)" type="DateTime" />
+            <Field name="Field_1_utc" source="Formula: (Multiple Sources)" type="DateTime" />
+          </RecordInfo>
+          <SortInfo noProgress="True">
+            <Field field="convert_from_utc_record_id" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="41">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicSelect.DynamicSelect">
+        <Position x="1062" y="426" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Formula</Mode>
+          <Expression>[Name] NOT IN ("Field_1")</Expression>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="convert_from_utc_record_id" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Field_2" source="TextInput:" type="DateTime" />
+            <Field name="Field_3" source="TextInput:" type="DateTime" />
+            <Field name="timezone" size="13" source="TextInput:" type="String" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="convert_from_utc_record_id" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDynamicSelect" />
+    </Node>
+    <Node ToolID="42">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+        <Position x="1074" y="150" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Update Value</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="44">
+      <GuiSettings>
+        <Position x="1254" y="330" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="BatchMacroGroupBy" />
+          <Value name="ControlParams"><![CDATA[Control Parameter (11)=Name
+]]></Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="convert_from_utc_record_id" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Field_1" source="Formula: DateTimeAdd([Field_1],[gmt_offset],'seconds')" type="DateTime" />
+            <Field name="Field_1_utc" source="Formula: [Field_1]" type="DateTime" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings Macro="Macro_111_Convert_From_UTC_Batch.yxmc" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Question" />
+      <Destination ToolID="9" Connection="Question Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Question" />
+      <Destination ToolID="15" Connection="Question Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="35" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Join" />
+      <Destination ToolID="44" Connection="Input1" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="31" Connection="True" />
+      <Destination ToolID="44" Connection="Control" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="9" Connection="Question" />
+      <Destination ToolID="11" Connection="Question" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="9" Connection="Question" />
+      <Destination ToolID="42" Connection="Question" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="11" Connection="Action" />
+      <Destination ToolID="31" Connection="Action" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="33" Connection="Output" />
+      <Destination ToolID="31" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="15" Connection="Question" />
+      <Destination ToolID="16" Connection="Question" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="16" Connection="Action" />
+      <Destination ToolID="5" Connection="Action" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="Output" />
+      <Destination ToolID="5" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="35" Connection="Output" />
+      <Destination ToolID="5" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="30" Connection="Output" />
+      <Destination ToolID="33" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="35" Connection="Output" />
+      <Destination ToolID="30" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="35" Connection="Output" />
+      <Destination ToolID="41" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="42" Connection="Action" />
+      <Destination ToolID="41" Connection="Action" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="36" Connection="Output" />
+      <Destination ToolID="38" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="37" Connection="Output" />
+      <Destination ToolID="40" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="41" Connection="Output" />
+      <Destination ToolID="40" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="38" Connection="True" />
+      <Destination ToolID="37" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="40" Connection="Join" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="44" Connection="Output" />
+      <Destination ToolID="36" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="False" />
+    <ZoomLevel value="-2" />
+    <LayoutType>Horizontal</LayoutType>
+    <Constants>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>List Box (9)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Macro Output (14)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Drop Down (15)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+    </Constants>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Macro_110_Convert_From_UTC</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+    <RuntimeProperties>
+      <Actions>
+        <NoCondition>
+          <Type>NoCondition</Type>
+          <Description>(Always Run)</Description>
+          <True>
+            <Action>
+              <Type>UpdateValue</Type>
+              <Description />
+              <ToolId value="11" />
+              <Mode>Simple</Mode>
+              <Variable />
+              <Replace value="True" />
+              <ReplaceText>"Field_1"</ReplaceText>
+              <Destination>31/Expression</Destination>
+            </Action>
+            <Action>
+              <Type>UpdateValue</Type>
+              <Description />
+              <ToolId value="16" />
+              <Mode>Simple</Mode>
+              <Variable />
+              <Replace value="False" />
+              <Destination>5/JoinInfo[2]/Field/@field</Destination>
+            </Action>
+            <Action>
+              <Type>UpdateValue</Type>
+              <Description />
+              <ToolId value="42" />
+              <Mode>Simple</Mode>
+              <Variable />
+              <Replace value="True" />
+              <ReplaceText>"Field_1"</ReplaceText>
+              <Destination>41/Expression</Destination>
+            </Action>
+          </True>
+        </NoCondition>
+      </Actions>
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Questions</Description>
+          <Name>Tab (8)</Name>
+          <ToolId value="8" />
+          <Questions>
+            <Question>
+              <Type>ListBox</Type>
+              <Description>Date Fields</Description>
+              <Name>List Box (9)</Name>
+              <ToolId value="9" />
+              <Multiple value="True" />
+              <Multiple_Custom value="True" />
+              <Multiple_Start>"</Multiple_Start>
+              <Multiple_Separator>","</Multiple_Separator>
+              <Multiple_End>"</Multiple_End>
+              <Multiple_Default value="False" />
+              <Mode>MacroField</Mode>
+              <MacroField_InputTool value="0" />
+              <Field_IncludeNone value="False" />
+              <MacroField_FilterTypes>Date,DateTime</MacroField_FilterTypes>
+            </Question>
+            <Question>
+              <Type>MacroInput</Type>
+              <Description />
+              <Name>Macro Input (4)</Name>
+              <ToolId value="4" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description>Macro Output (14)</Description>
+              <Name>Macro Output (14)</Name>
+              <ToolId value="14" />
+            </Question>
+            <Question>
+              <Type>ListBox</Type>
+              <Description>Time Zone Field</Description>
+              <Name>Drop Down (15)</Name>
+              <ToolId value="15" />
+              <Multiple value="False" />
+              <Default />
+              <Mode>MacroField</Mode>
+              <MacroField_InputTool value="0" />
+              <Field_IncludeNone value="False" />
+              <MacroField_FilterTypes>String,WString,V_String,V_WString</MacroField_FilterTypes>
+            </Question>
+          </Questions>
+        </Question>
+      </Questions>
+      <ModuleType>Macro</ModuleType>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="False" />
+      <MacroImageStd value="39" />
+      <MacroInputs />
+      <MacroOutputs />
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools>
+        <Tool ToolId="4" Selected="True" />
+        <Tool ToolId="14" Selected="True" />
+        <Tool ToolId="44" Selected="True" />
+      </Wiz_OpenOutputTools>
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>
