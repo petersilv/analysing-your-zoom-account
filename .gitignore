@@ -1,5 +1,6 @@
 *.bak
 *.gdoc
+*.twbr
 
 Icon?
 
@@ -13,8 +14,7 @@ Data/Event_Participants.csv
 
 # Other
 Other/Create_Sample_Data/
-Other/Documentation/
-Other/Internal/
+Other/TIL/
 
 # Tableau
-Tableau/
+Tableau/TIL*
