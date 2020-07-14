@@ -2,7 +2,7 @@
 
 Download and visualise your Zoom meeting and webinar data with Alteryx and Tableau.
 
-![README Image](https://raw.githubusercontent.com/petersilv/analysing-your-zoom-account/master/Other/Images/readme_img.png?token=AFSMUVODLWW2AKFCR5LYPDC67SMQO)
+![README Image](./Other/Images/readme_img.png?raw=true)
 
 ## Getting Started
 
@@ -31,5 +31,7 @@ To get started analyising your own data simply download the ZIP of the repositor
 ### 2. Copy the API Key & API Secret
 
 ### 3. Use the pre-built Alteryx App or add the Macros to your own workflow
+
+### 4. Present you data in the pre-built Tableau dashboard
 
 ## Features
