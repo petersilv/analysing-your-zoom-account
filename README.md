@@ -35,3 +35,7 @@ To get started analyising your own data simply download the ZIP of the repositor
 ### 4. Present you data in the pre-built Tableau dashboard
 
 ## Features
+
+## Sample Data
+
+There are some sample csv file included in the repository that are used to give an idea of how your data might look in the example Tableau dashboard. This data is created in [Mockaroo](https://www.mockaroo.com/) and contains no real names or personal information.
